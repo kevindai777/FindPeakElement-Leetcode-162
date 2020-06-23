@@ -26,8 +26,10 @@ let high = nums.length - 1
 
 while (low < high) {
     let mid = Math.floor((low + high)/2)
+    //Descending slope
     if (nums[mid] > nums[mid + 1]) {
         high = mid
+    //Rising slope
     } else {
         low = mid + 1
     }
